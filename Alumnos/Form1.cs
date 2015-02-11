@@ -43,7 +43,7 @@ namespace Alumnos
             if(alum.Aprobado)
                 aprob="Aprobado";
             else
-                aprob="Suspendido";
+                aprob="Suspendido"; 
 
 
             txtLista.Text = txtLista.Text + alum.Nombre + "\t" + "Nota: " +

@@ -24,7 +24,7 @@ namespace Alumnos
         }
 
         /// <summary>
-        /// Nota del alumno
+        /// Nota del alumno 
         /// </summary>
         public int Nota
         {

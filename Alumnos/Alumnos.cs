@@ -40,7 +40,7 @@ namespace Alumnos
             listaAlumnos.Add(alum);
         }
         /// <summary>
-        /// Calcula la nota media de todos los alumnos y la devuelve como valor de tipo double
+        /// Calcula la nota media de todos los alumnos y la devuelve como valor de tipo double 
         /// </summary>
         public double MediaNotas(double sumNotas)
         {
