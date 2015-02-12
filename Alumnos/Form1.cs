@@ -43,11 +43,10 @@ namespace Alumnos
             if(alum.Aprobado)
                 aprob="Aprobado";
             else
-                aprob="Suspendido"; 
+                aprob="Suspendido";
 
 
-            txtLista.Text = txtLista.Text + alum.Nombre + "\t" + "Nota: " + 
-                Convert.ToString(alum.Nota) + "\t" + aprob + System.Environment.NewLine;
+            txtLista.Items.Add(txtLista.Text + alum.Nombre + "\t" + "Nota: " + Convert.ToString(alum.Nota) + "\t" + aprob);
 
             sumaNotas = sumaNotas + alum.Nota; 
 

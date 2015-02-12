@@ -34,9 +34,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtAlumno = new System.Windows.Forms.TextBox();
             this.btnGuardaAlum = new System.Windows.Forms.Button();
-            this.txtLista = new System.Windows.Forms.TextBox();
             this.txtMedia = new System.Windows.Forms.TextBox();
             this.txtNota2 = new System.Windows.Forms.NumericUpDown();
+            this.txtLista = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNota2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,15 +93,6 @@
             this.btnGuardaAlum.UseVisualStyleBackColor = true;
             this.btnGuardaAlum.Click += new System.EventHandler(this.btnGuardaAlum_Click);
             // 
-            // txtLista
-            // 
-            this.txtLista.Location = new System.Drawing.Point(24, 104);
-            this.txtLista.Multiline = true;
-            this.txtLista.Name = "txtLista";
-            this.txtLista.ReadOnly = true;
-            this.txtLista.Size = new System.Drawing.Size(589, 237);
-            this.txtLista.TabIndex = 6;
-            // 
             // txtMedia
             // 
             this.txtMedia.Location = new System.Drawing.Point(513, 351);
@@ -122,14 +113,22 @@
             this.txtNota2.Size = new System.Drawing.Size(100, 20);
             this.txtNota2.TabIndex = 8;
             // 
+            // txtLista
+            // 
+            this.txtLista.FormattingEnabled = true;
+            this.txtLista.Location = new System.Drawing.Point(24, 104);
+            this.txtLista.Name = "txtLista";
+            this.txtLista.Size = new System.Drawing.Size(589, 238);
+            this.txtLista.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 383);
+            this.Controls.Add(this.txtLista);
             this.Controls.Add(this.txtNota2);
             this.Controls.Add(this.txtMedia);
-            this.Controls.Add(this.txtLista);
             this.Controls.Add(this.btnGuardaAlum);
             this.Controls.Add(this.txtAlumno);
             this.Controls.Add(this.label4);
@@ -152,9 +151,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtAlumno;
         private System.Windows.Forms.Button btnGuardaAlum;
-        private System.Windows.Forms.TextBox txtLista;
         private System.Windows.Forms.TextBox txtMedia;
         private System.Windows.Forms.NumericUpDown txtNota2;
+        private System.Windows.Forms.ListBox txtLista;
     }
 }
 
