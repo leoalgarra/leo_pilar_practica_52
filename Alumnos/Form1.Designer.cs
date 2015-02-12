@@ -33,10 +33,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtAlumno = new System.Windows.Forms.TextBox();
-            this.txtNota = new System.Windows.Forms.TextBox();
             this.btnGuardaAlum = new System.Windows.Forms.Button();
             this.txtLista = new System.Windows.Forms.TextBox();
             this.txtMedia = new System.Windows.Forms.TextBox();
+            this.txtNota2 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNota2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,13 +83,6 @@
             this.txtAlumno.Size = new System.Drawing.Size(351, 20);
             this.txtAlumno.TabIndex = 4;
             // 
-            // txtNota
-            // 
-            this.txtNota.Location = new System.Drawing.Point(390, 41);
-            this.txtNota.Name = "txtNota";
-            this.txtNota.Size = new System.Drawing.Size(100, 20);
-            this.txtNota.TabIndex = 5;
-            // 
             // btnGuardaAlum
             // 
             this.btnGuardaAlum.Location = new System.Drawing.Point(516, 39);
@@ -116,15 +110,27 @@
             this.txtMedia.Size = new System.Drawing.Size(100, 20);
             this.txtMedia.TabIndex = 7;
             // 
+            // txtNota2
+            // 
+            this.txtNota2.Location = new System.Drawing.Point(390, 41);
+            this.txtNota2.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(100, 20);
+            this.txtNota2.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 383);
+            this.Controls.Add(this.txtNota2);
             this.Controls.Add(this.txtMedia);
             this.Controls.Add(this.txtLista);
             this.Controls.Add(this.btnGuardaAlum);
-            this.Controls.Add(this.txtNota);
             this.Controls.Add(this.txtAlumno);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -132,6 +138,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.txtNota2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,10 +151,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtAlumno;
-        private System.Windows.Forms.TextBox txtNota;
         private System.Windows.Forms.Button btnGuardaAlum;
         private System.Windows.Forms.TextBox txtLista;
         private System.Windows.Forms.TextBox txtMedia;
+        private System.Windows.Forms.NumericUpDown txtNota2;
     }
 }
 

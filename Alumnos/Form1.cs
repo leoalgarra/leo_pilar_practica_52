@@ -33,12 +33,12 @@ namespace Alumnos
             Alumno alum = new Alumno();
 
             alum.Nombre = txtAlumno.Text;
-            alum.Nota = int.Parse(txtNota.Text);
+            alum.Nota = int.Parse(txtNota2.Text);
 
             alumns.AgregarAlumno(alum);
 
             txtAlumno.Clear();
-            txtNota.Clear();
+            txtNota2.Value = 0;
 
             if(alum.Aprobado)
                 aprob="Aprobado";
