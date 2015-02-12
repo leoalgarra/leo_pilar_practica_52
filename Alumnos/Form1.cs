@@ -46,12 +46,12 @@ namespace Alumnos
                 aprob="Suspendido"; 
 
 
-            txtLista.Text = txtLista.Text + alum.Nombre + "\t" + "Nota: " +
+            txtLista.Text = txtLista.Text + alum.Nombre + "\t" + "Nota: " + 
                 Convert.ToString(alum.Nota) + "\t" + aprob + System.Environment.NewLine;
 
-            sumaNotas = sumaNotas + alum.Nota;
+            sumaNotas = sumaNotas + alum.Nota; 
 
-            txtMedia.Text = Convert.ToString(alumns.MediaNotas(sumaNotas));
+            txtMedia.Text = Convert.ToString(alumns.MediaNotas(sumaNotas)); 
 
         }
     }
