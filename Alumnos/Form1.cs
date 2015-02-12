@@ -50,7 +50,9 @@ namespace Alumnos
 
             sumaNotas = sumaNotas + alum.Nota; 
 
-            txtMedia.Text = Convert.ToString(alumns.MediaNotas(sumaNotas)); 
+            txtMedia.Text = Convert.ToString(alumns.MediaNotas(sumaNotas));
+
+            txtCuenta.Text = Convert.ToString(alumns.cuentaAlumnos);
 
         }
     }

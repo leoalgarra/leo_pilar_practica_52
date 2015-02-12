@@ -37,6 +37,8 @@
             this.txtMedia = new System.Windows.Forms.TextBox();
             this.txtNota2 = new System.Windows.Forms.NumericUpDown();
             this.txtLista = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCuenta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNota2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,11 +123,30 @@
             this.txtLista.Size = new System.Drawing.Size(589, 238);
             this.txtLista.TabIndex = 9;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 354);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Total alumnos:";
+            // 
+            // txtCuenta
+            // 
+            this.txtCuenta.Enabled = false;
+            this.txtCuenta.Location = new System.Drawing.Point(103, 351);
+            this.txtCuenta.Name = "txtCuenta";
+            this.txtCuenta.Size = new System.Drawing.Size(100, 20);
+            this.txtCuenta.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 383);
+            this.Controls.Add(this.txtCuenta);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtLista);
             this.Controls.Add(this.txtNota2);
             this.Controls.Add(this.txtMedia);
@@ -154,6 +175,8 @@
         private System.Windows.Forms.TextBox txtMedia;
         private System.Windows.Forms.NumericUpDown txtNota2;
         private System.Windows.Forms.ListBox txtLista;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCuenta;
     }
 }
 

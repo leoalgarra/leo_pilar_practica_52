@@ -51,5 +51,16 @@ namespace Alumnos
             }
         }
 
+        public int cuentaAlumnos
+        {
+            get
+            {
+                int res;
+
+                res = listaAlumnos.Count;
+
+                return res;
+            }
+        }
     }
 }
